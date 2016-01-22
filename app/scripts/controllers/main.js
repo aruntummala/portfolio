@@ -22,7 +22,7 @@ angular.module('artuApp')
     var nav_list3 = $('.nav_list3');
 
     var timeLineMax = new TimelineMax({yoyo:true});
-    //TweenLite.set($('.myNav'), {visibility:"visible"});
+    TweenLite.set($('.myNav'), {visibility:"visible"});
     //timeLineMax.from(nav_list1, 2, {left: '-=100px,', delay: 1});
     //timeLineMax.from(nav_list2, 2, {left: '-=100px,', delay: 1});
     //timeLineMax.from(nav_list3, 2, {left: '-=100px,', delay: 1});
