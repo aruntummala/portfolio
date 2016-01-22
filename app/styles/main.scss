@@ -2,33 +2,72 @@
 
 @font-face {
     font-family: Roboto;
-    src: url(../fonts/Roboto-Regular.woff) format(woff);
+    src: url(fonts/Roboto-Regular.woff) format(woff);
 }
 
-body {
+body.ng-scope {
   background-color: #fff;
   font-family: Roboto; 
 }
 
 .artu_navbar {
-  @include span(100%);
   border-bottom: 1px solid #ccc;
   font-size: 15px;
   background-color: #fff;
   color: #000;
   padding: 10px;
+  margin-left: 1em;
 }
-.artu_maincontent {
-  /*color: #fff;
-  font-size: 18px;
-  border: 1px dotted #fff;
-  content: '/e';
-  width: 1000px;
-  height: 500px;
+.myNav {
+  //background-color: #22A7F0;
   position: absolute;
-  margin-top: 100px;
-  margin-left: 100px;*/
+  height: 100%;
+  //visibility: hidden;
 }
-.artu_maincontent > .box {
-  @include span(2 of 12);
+.myNav > ul {
+  padding: 0;
+}
+.nav_list {
+  color: #FFFFFF;
+  padding: 16px;
+  border-bottom: 1px solid #fff;
+  font-size: 16px;
+  background-color: #22A7F0;
+  cursor: pointer;
+}
+.empty_nav {
+  background-color: #22A7F0;
+  height: 100%;
+}
+.mask_about_me {
+  position: absolute;
+  background-color: #1BBC9B;
+}
+.mask_technolgy_stack {
+  position: absolute;
+  background-color: #16A086;
+}
+.myName, .whatIdo {
+  position: relative;
+  top: 40%;
+}
+.mask_left_top {
+    position: absolute;
+    top: 40px;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 1040;
+    background-color: #453E4A;
+    opacity:0.4;
+}
+.mask_right_top {
+    position: absolute;
+    top: 40px;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 1040;
+    background-color: #453E4A;
+    opacity:0.4;
 }

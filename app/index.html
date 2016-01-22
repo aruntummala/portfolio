@@ -8,12 +8,12 @@
     <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
     <!-- build:css(.) styles/vendor.css -->
     <!-- bower:css -->
+    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css" />
     <!-- endbower -->
     <!-- endbuild -->
     <!-- build:css(.tmp) styles/main.css -->
     <link rel="stylesheet" href="styles/main.css">
     <!-- endbuild -->
-    <link rel="stylesheet" href="styles/jquery-ui.css">
   </head>
   <body ng-app="artuApp">
     <!--[if lt IE 7]>
@@ -22,16 +22,27 @@
 
     <!-- Add your site or application content here -->
 
-    <div class="container">
-        <div ng-view=""></div>
+    <div ng-view=""></div>
+    <nav class="myNav">
+        <div class="nav_list nav_list1">Technology Stack and Tools</div>
+        <div class="nav_list nav_list2">About Me</div>
+        <div class="nav_list nav_list3">Contact</div>
+        <div class="empty_nav"></div>
+    </nav>
+    <!--div class="mask_about_me text-center">
+        <div class="myName">Arun Tummala</div>
+        <div class="whatIdo">Front End Engineer</div>
     </div>
-    <div class="artu_maincontent" ng-controller="MainContentCtrl">
-        <ul>
-            <li class="nav_list" ng-repeat="nav in data">{{ nav }}</li>
-        </ul>
-        <div id="main_content"></div>
-    </div>
-
+    <div class="mask_technolgy_stack text-center">
+        <div class="technolgy_stack">
+            <div><span>Web :</span> <span>HTML5, CSS3, Javascript</span></div>
+            <div><span>Javscript Frameworks :</span> <span>Backbone, ExtJS, Angular</span></div>
+            <div><span>CSS Frameworks :</span> <span>Bootstrap</span></div>
+            <div><span>Tools :</span> <span>Grunt,Sublime Text,Yeoman </span></div>
+        </div>
+    </div -->
+    <!--div class="mask_left_top"></div>
+    <div class="mask_right_top"></div -->
     <!-- Google Analytics: change UA-XXXXX-X to be your site's ID -->
      <script>
        !function(A,n,g,u,l,a,r){A.GoogleAnalyticsObject=l,A[l]=A[l]||function(){
@@ -54,6 +65,7 @@
     <script src="bower_components/angular-route/angular-route.js"></script>
     <script src="bower_components/angular-sanitize/angular-sanitize.js"></script>
     <script src="bower_components/angular-touch/angular-touch.js"></script>
+    <script src="bower_components/bootstrap/dist/js/bootstrap.js"></script>
     <!-- endbower -->
     <!-- endbuild -->
 
@@ -70,7 +82,8 @@
         <script src="scripts/libs/utils/SplitText.js"></script>
         <script src="scripts/libs/plugins/CSSPlugin.js"></script>
         <script src="scripts/libs/plugins/ScrambleTextPlugin.js"></script>
-        <script src="scripts/libs/jquery-ui.js"></script>
+        <script src="scripts/libs/plugins/Physics2DPlugin.js"></script>
+        <script src="scripts/libs/plugins/ScrollToPlugin.js"></script>
         <!-- endbuild -->
 </body>
 </html>
