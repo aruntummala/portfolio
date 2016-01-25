@@ -4,19 +4,28 @@
     font-family: Roboto;
     src: url(fonts/Roboto-Regular.woff) format(woff);
 }
+@font-face {
+    font-family: RobotoLight;
+    src: url(fonts/Roboto-Light.woff) format(woff);
+}
 
 body.ng-scope {
   background-color: #fff;
   font-family: Roboto; 
 }
 
+.nav_wrapper {
+  position: fixed;
+  width: 100%;
+  z-index: 1000;
+}
+
 .artu_navbar {
   border-bottom: 1px solid #ccc;
   font-size: 15px;
-  background-color: #fff;
-  color: #000;
+  background-color: #000000;
+  color: #FFFFFF;
   padding: 10px;
-  margin-left: 1em;
 }
 .myNav {
   //background-color: #22A7F0;
@@ -24,9 +33,11 @@ body.ng-scope {
   height: 100%;
   visibility: hidden;
 }
+
 .myNav > ul {
   padding: 0;
 }
+
 .nav_list {
   color: #FFFFFF;
   padding: 16px;
@@ -35,39 +46,111 @@ body.ng-scope {
   background-color: #22A7F0;
   cursor: pointer;
 }
+
 .empty_nav {
   background-color: #22A7F0;
   height: 100%;
+}
+
+.screen_container {
+  //position: absolute;
+  top: 43px;
+  width: 100%;
+  height: 100%;
+}
+
+.screen1 {
+  background-color: #22A7F0;
+  border-bottom: 1px solid #FFFFFF;
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.screen2 {
+  //background-color: #3498DB;
+  border-bottom: 1px solid #FFFFFF;
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.screen3 {
+  background-color: #2574A9;
+  border-bottom: 1px solid #FFFFFF;
+  position: relative;
+  width: 100%;
+  height: 100%;  
 }
 .mask_about_me {
   position: absolute;
   background-color: #1BBC9B;
 }
+
 .mask_technolgy_stack {
   position: absolute;
   background-color: #16A086;
 }
-.myName, .whatIdo {
+
+.whatIdo {
   position: relative;
-  top: 40%;
+  font-size: 26px;
+  font-weight: bold;
+  color: #FFFFFF;
+  top: 35%;
+  margin: 0;
+  //left: 30px;
 }
-.mask_left_top {
-    position: absolute;
-    top: 40px;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    z-index: 1040;
-    background-color: #453E4A;
-    opacity:0.4;
+
+.myName {
+  position: relative;
+  font-size: 36px;
+  font-weight: normal;
+  font-family: RobotoLight;
+  color: #FFFFFF;
+  top: 35%;
+  margin: 0;
 }
-.mask_right_top {
-    position: absolute;
-    top: 40px;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    z-index: 1040;
-    background-color: #453E4A;
-    opacity:0.4;
+
+.logos {
+  width: 150px;
+  height: 161px;
+  position: relative;
+  float: left;
+  margin: 35px;
+  visibility: hidden;
+}
+
+.js_logo {
+  background: url('../images/js_logo.svg');
+}
+.bb_logo {
+  background: url('../images/bb_logo.svg');
+}
+.boostrap_logo{
+  background: url('../images/boostrap_logo.png');
+  background-repeat: round;
+}
+.angular_logo{
+  background: url('../images/angular_logo.svg');
+  background-size: cover;
+}
+.css3_logo {
+  background: url('../images/css3_logo.svg');
+  background-size: cover;
+  background-position: 0px;
+  background-position-x: 0px;
+  background-position-y: -50px;
+}
+.html5_logo {
+  background: url('../images/html5_logo.svg');
+  background-size: cover;
+  background-position: 0px;
+  background-position-x: 0px;
+  background-position-y: -50px;
+}
+.grunt_logo {
+  background: url("../images/grunt_logo.png");
+  background-size: cover;
+  height: 145px;
 }
