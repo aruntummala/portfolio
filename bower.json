@@ -19,5 +19,8 @@
     "angular-mocks": "^1.3.0"
   },
   "appPath": "app",
-  "moduleName": "artuApp"
+  "moduleName": "artuApp",
+  "resolutions": {
+    "jquery": "~2.1.4"
+  }
 }

@@ -35,7 +35,7 @@ angular.module('artuApp').controller('MainCtrl', function($scope) {
                     scrambleText: {
                         text: "Arun Tummala",
                         chars: "lowerCase",
-                        revealDelay: 0.5,
+                        revealDelay: 2,
                         tweenLength: false,
                         ease: Back.easeOut
                     }
